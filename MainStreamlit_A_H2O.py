@@ -4,8 +4,6 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-model_path = 'D:\Ditto\Kuliah\Matkul\Semester 5\ML\Pertemuan 8(UTS)'
-
 model = os.path.join(model_path, 'LR_properti_model.pkl')
 with open(model, 'rb') as f:
     lr_model = pickle.load(f)
